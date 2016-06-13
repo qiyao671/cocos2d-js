@@ -11,7 +11,7 @@ var AboutScene  = cc.Scene.extend({
 		bg.x = size.width / 2;
 		bg.y = size.height / 2;
 		
-		var helloLabel = new  cc.LabelTTF("This is about Scene", "Arial", 18);
+		var helloLabel = new  cc.LabelTTF("Hungry Hero is a free and open source game built on Adobe Flash using Starling Framework.", "Arial", 18);
 		helloLabel.x = size.width / 2;
 		helloLabel.y = size.height / 2 + 80;
 		helloLabel.setColor(cc.color(255,0,0));

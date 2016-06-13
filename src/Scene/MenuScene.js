@@ -17,7 +17,7 @@ MenuScene = cc.Scene.extend({
         bgWelcome.y = size.height / 2;
         layer.addChild(bgWelcome, 1);
 
-        cc.spriteFrameCache.addSpriteFrames(res.texture_plist);
+  
         var title = new cc.Sprite("#welcome_title.png");
         title.x = 800;
         title.y = 500;
@@ -46,6 +46,8 @@ MenuScene = cc.Scene.extend({
         var menu = new cc.Menu(this._aboutBtn, this._playBtn, soundButton);
         layer.addChild(menu, 3);
         menu.x = menu.y = 0;
+        
+        Sound.playMenuBgMusic();
 
     },
 

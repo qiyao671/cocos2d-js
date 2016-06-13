@@ -11,11 +11,11 @@ var SoundButton = cc.MenuItemToggle.extend({
 		var action = new cc.Animate(animation).repeatForever();
 		soundOn.runAction(action);
 		
-		this._super(new cc.MenuItemSprite(soundOn, null, null), new cc.Sprite("#soundOff.png"));
+		this._super(new cc.MenuItemSprite(soundOn, null, null), new cc.MenuItemImage("#soundOff.png"));
 		this.setCallback(this._soundOnOff(), this);
 	},
 	
 	_soundOnOff: function() {
-		console.log("test")
+		Sound.toggleOnOff();
 	}
 });
